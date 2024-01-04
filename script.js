@@ -17,7 +17,7 @@ let MinSum=0;
 	MinSum+=sum;
 	}
 	
-	console.log(MinSum);
+	//console.log(MinSum);
 	return MinSum;
 }
 

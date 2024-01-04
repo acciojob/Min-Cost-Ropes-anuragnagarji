@@ -7,6 +7,7 @@ let MinSum=0;
 		let sum=arr[0]+arr[1];
 		arr.shift();
 		arr.shift();
+		let i=0;
 		while(arr[i]<sum){
             i++;
         }

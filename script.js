@@ -7,15 +7,17 @@ let MinSum=0;
 		let sum=arr[0]+arr[1];
 		arr.shift();
 		arr.shift();
-		if(sum<arr[0]){
-			arr.unshift(sum);
-		}
-		else if(sum<arr[1]){
-			arr.unshift(sum)
-		}
-		else arr.push(sum)
+		while(arr[i]<sum){
+            i++;
+        }
+       if(i==0){
+           arr.unshift(sum);
+       }
+        else{
+            arr.splice(i,0,sum);
+        }
 		
-		arr.sort((a,b)=>a-b);
+		//arr.sort((a,b)=>a-b);
 	MinSum+=sum;
 	}
 	

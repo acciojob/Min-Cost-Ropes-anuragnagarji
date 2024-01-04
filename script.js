@@ -14,6 +14,8 @@ let MinSum=0;
 			arr.unshift(sum)
 		}
 		else arr.push(sum)
+		
+		arr.sort((a,b)=>a-b);
 	MinSum+=sum;
 	}
 	
